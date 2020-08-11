@@ -1,4 +1,7 @@
 //Global
+body {
+  overflow-x: hidden;
+}
 .all-center {
   display: flex !important;
   justify-content: center;
@@ -12,3 +15,7 @@
 }
 
 //Home Page
+.hero {
+  height: 100vh;
+  background: lightgrey;
+}

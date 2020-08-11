@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .all-center {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -12,5 +16,10 @@
 
 .header nav {
   background: white;
+}
+
+.hero {
+  height: 100vh;
+  background: lightgrey;
 }
 /*# sourceMappingURL=global.css.map */
