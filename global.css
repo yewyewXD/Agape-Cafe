@@ -14,12 +14,14 @@ body {
           align-items: center;
 }
 
-.header nav {
-  background: white;
-}
-
 .hero {
   height: 100vh;
-  background: lightgrey;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("./images/hero-bg.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), url("./images/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.menu .tab-content {
+  min-height: 500px;
 }
 /*# sourceMappingURL=global.css.map */

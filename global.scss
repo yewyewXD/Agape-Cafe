@@ -8,17 +8,16 @@ body {
   align-items: center;
 }
 
-.header {
-  nav {
-    background: white;
-  }
-}
-
 //Home Page
 .hero {
   height: 100vh;
-  background: lightgrey;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5)),
+    url("./images/hero-bg.jpg") no-repeat center;
+  background-size: cover;
 }
 
-.review {
+.menu {
+  .tab-content {
+    min-height: 500px;
+  }
 }

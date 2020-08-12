@@ -22,7 +22,7 @@
   <body>
     <!--Header-->
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
           <a class="navbar-brand mx-3" href="/">Logo</a>
           <button
@@ -54,13 +54,21 @@
                 <a class="nav-link text-uppercase mx-2" href="/">location</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a
+                  class="nav-link"
+                  target="_blank"
+                  href="https://www.facebook.com/asapcafe"
+                >
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a
+                  class="nav-link"
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=60167212991&text=Hi,%20I%20came%20across%20your%20website."
+                >
                   <i class="fa fa-whatsapp" aria-hidden="true"></i>
                 </a>
               </li>
@@ -73,12 +81,14 @@
     <!-- Hero -->
     <div class="hero all-center text-center">
       <div class="container all-center flex-column">
-        <h1 class="display-3 mb-5">the right ingredients for the right food</h1>
+        <h1 class="display-3 mb-5 text-white">
+          the right ingredients for the right food
+        </h1>
         <div class="hero-buttons">
-          <a href="/" class="btn btn-primary btn-lg mx-2 text-uppercase"
+          <a href="/#booking" class="btn btn-primary btn-lg mx-2 text-uppercase"
             >book A table</a
           >
-          <a href="/" class="btn btn-secondary btn-lg mx-2 text-uppercase"
+          <a href="/#menu" class="btn btn-secondary btn-lg mx-2 text-uppercase"
             >see our menu</a
           >
         </div>
@@ -216,19 +226,21 @@
     </div>
 
     <!--Menu-->
-    <div class="menu py-5">
+    <div class="menu py-5 text-center bg-light" id="menu">
       <div class="container">
+        <h1>TASTY MENU TODAY</h1>
+        <p>Chef selection</p>
         <div class="row">
           <div class="col-12">
-            <div class="list-group flex-row py-5" id="list-tab" role="tablist">
+            <div class="list-group flex-row" id="list-tab" role="tablist">
               <a
                 class="list-group-item list-group-item-action active"
-                id="list-home-list"
+                id="list-all-list"
                 data-toggle="list"
-                href="#list-home"
+                href="#list-all"
                 role="tab"
-                aria-controls="home"
-                >Home</a
+                aria-controls="all"
+                >Show All</a
               >
               <a
                 class="list-group-item list-group-item-action border"
@@ -260,12 +272,12 @@
             </div>
           </div>
           <div class="col-12">
-            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-content all-center p-3" id="nav-tabContent">
               <div
                 class="tab-pane fade show active"
-                id="list-home"
+                id="list-all"
                 role="tabpanel"
-                aria-labelledby="list-home-list"
+                aria-labelledby="list-all-list"
               >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
                 rem.
@@ -310,7 +322,7 @@
     </div>
 
     <!--Booking-->
-    <div class="booking py-5">
+    <div class="booking py-5" id="booking">
       <div class="container">
         <div class="row all-center">
           <div class="col-xl-6">
@@ -383,12 +395,21 @@
     </div>
 
     <!--Footer-->
-    <footer class="footer">
+    <footer class="footer py-5">
       <div class="container">
-        <div class="row all-center">
-          <div class="col-4 all-center">site</div>
-          <div class="col-4 all-center">operating hours</div>
-          <div class="col-4 all-center">location</div>
+        <div class="row text-center">
+          <div class="col-4 text-center">
+            <h1>site</h1>
+            <p>site 1</p>
+          </div>
+          <div class="col-4 text-center">
+            <h1>operating hours</h1>
+            <p>time 1</p>
+          </div>
+          <div class="col-4 text-center">
+            <h1>location</h1>
+            <p>place 1</p>
+          </div>
         </div>
       </div>
     </footer>
