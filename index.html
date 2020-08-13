@@ -19,7 +19,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarContent">
     <!--Header-->
     <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -38,17 +38,24 @@
 
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link text-uppercase mx-2 active" href="/"
+              <li class="nav-item">
+                <a class="nav-link text-uppercase mx-2" href="#home">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase mx-2" href="#about"
                   >about us</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-uppercase mx-2" href="/">our menu</a>
+                <a class="nav-link text-uppercase mx-2" href="#menu"
+                  >our menu</a
+                >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link text-uppercase mx-2" href="/">reservation</a>
+                <a class="nav-link text-uppercase mx-2" href="#booking"
+                  >reservation</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link text-uppercase mx-2" href="/">location</a>
@@ -79,7 +86,7 @@
     </header>
 
     <!-- Hero -->
-    <div class="hero all-center text-center">
+    <div class="hero all-center text-center" id="home">
       <div class="container all-center flex-column">
         <h1 class="display-3 mb-5 text-white">
           the right ingredients for the right food
@@ -96,7 +103,7 @@
     </div>
 
     <!--About-->
-    <div class="about all-center py-5">
+    <div class="about all-center py-5" id="about">
       <div class="container">
         <div class="row all-center">
           <div class="col-lg-6">
@@ -342,12 +349,13 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label>Your Email</label>
+                    <label>Your Email *</label>
                     <input
-                      type="text"
+                      type="email"
                       class="form-control"
-                      placeholder="Your email*"
+                      placeholder="example@mail.com"
                       name="Email"
+                      id="emailInput"
                       required
                     />
                   </div>
@@ -355,8 +363,14 @@
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label>When would you like to book?</label>
-                    <input type="date" class="form-control" name="Date" />
+                    <label>When would you like to book? *</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="dateInput"
+                      name="Date"
+                      required
+                    />
                   </div>
                 </div>
               </div>
@@ -365,14 +379,19 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label>What time?</label>
-                    <input type="time" class="form-control" name="Time" />
+                    <input
+                      type="time"
+                      class="form-control"
+                      name="Time"
+                      id="timeInput"
+                    />
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-group">
                     <label>Party Size</label>
-                    <select class="custom-select" name="Party">
+                    <select class="custom-select" id="partyInput" name="Party">
                       <option selected>Select size</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -385,8 +404,10 @@
                 </div>
               </div>
             </form>
-
-            <button type="submit" class="btn btn-primary btn-lg mt-3">
+            <button
+              class="btn btn-primary btn-lg mt-3"
+              onclick="submitBooking()"
+            >
               Book now
             </button>
           </div>
@@ -399,16 +420,22 @@
       <div class="container">
         <div class="row text-center">
           <div class="col-4 text-center">
-            <h1>site</h1>
+            <h3>site</h3>
             <p>site 1</p>
           </div>
           <div class="col-4 text-center">
-            <h1>operating hours</h1>
-            <p>time 1</p>
+            <h3>operating hours</h3>
+            <h5>Mon - Wed, Sun</h5>
+            <span>12:00 PM - 9:00 PM</span>
+            <h5>Thu - Sat</h5>
+            <span>12:00 PM - 8:30 PM</span>
           </div>
           <div class="col-4 text-center">
-            <h1>location</h1>
-            <p>place 1</p>
+            <h3>location</h3>
+            <p>
+              8, Jalan Permas 11/1C, Bandar Baru Permas Jaya 81750 Johor Bahru,
+              Malaysia
+            </p>
           </div>
         </div>
       </div>
@@ -430,5 +457,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="booking.js"></script>
   </body>
 </html>
