@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .all-center {
@@ -12,12 +13,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#navbar {
-  background: rgba(255, 94, 0, 0);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .btn {
@@ -34,10 +29,6 @@ body {
           transform: scale(1.1);
 }
 
-.btn-lg {
-  padding: 15px 30px !important;
-}
-
 .btn-primary {
   background: #ff5e00 !important;
   border: solid 1px #ff5e00 !important;
@@ -52,6 +43,36 @@ body {
   border: solid 1px white !important;
 }
 
+.btn-secondary-alt {
+  border: #ff5e00 solid 1px !important;
+  color: #ff5e00 !important;
+}
+
+.btn-lg {
+  padding: 15px 30px !important;
+}
+
+.btn-md {
+  padding: 10px 20px !important;
+}
+
+#navbar {
+  background: rgba(255, 94, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-link {
+  font-family: "Coustard", serif;
+  color: white !important;
+}
+
+.nav-link:hover::before, .nav-link:hover::after,
+.nav-link.active::before,
+.nav-link.active::after {
+  content: "-";
+}
+
 .hero {
   height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("./images/hero-bg.jpg") no-repeat center;
@@ -63,9 +84,31 @@ body {
   min-height: 500px;
 }
 
+.review {
+  background: rgba(255, 94, 0, 0.1);
+}
+
+.review .fa-angle-right,
+.review .fa-angle-left {
+  color: red;
+}
+
+.review .carousel-slide-point {
+  background-color: #ff5e00;
+}
+
+.booking {
+  background: rgba(255, 94, 0, 0.1);
+}
+
 @media (max-width: 992px) {
-  .active {
+  .nav-link.active {
     border: solid 1px white;
+  }
+  .nav-link:hover::before, .nav-link:hover::after,
+  .active::before,
+  .active::after {
+    content: none;
   }
 }
 /*# sourceMappingURL=global.css.map */

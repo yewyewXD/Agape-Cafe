@@ -1,18 +1,16 @@
 $theme: #ff5e00;
 $dark-theme: #df5302;
+$light-theme: rgba(255, 94, 0, 0.1);
 
 //Global
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 .all-center {
   display: flex !important;
   justify-content: center;
   align-items: center;
-}
-#navbar {
-  background: rgba(255, 94, 0, 0);
-  transition: 0.3s;
 }
 .btn {
   outline: none !important;
@@ -22,9 +20,6 @@ body {
   &:hover {
     transform: scale(1.1);
   }
-}
-.btn-lg {
-  padding: 15px 30px !important;
 }
 .btn-primary {
   background: $theme !important;
@@ -37,6 +32,33 @@ body {
   background: none !important;
   border: solid 1px white !important;
 }
+.btn-secondary-alt {
+  border: $theme solid 1px !important;
+  color: $theme !important;
+}
+.btn-lg {
+  padding: 15px 30px !important;
+}
+.btn-md {
+  padding: 10px 20px !important;
+}
+
+#navbar {
+  background: rgba(255, 94, 0, 0);
+  transition: 0.3s;
+}
+.nav-link {
+  font-family: "Coustard", serif;
+  color: white !important;
+}
+.nav-link:hover,
+.nav-link.active {
+  &::before,
+  &::after {
+    content: "-";
+  }
+}
+
 //Home Page
 .hero {
   height: 100vh;
@@ -50,9 +72,30 @@ body {
     min-height: 500px;
   }
 }
+.review {
+  background: $light-theme;
+  .fa-angle-right,
+  .fa-angle-left {
+    color: red;
+  }
+  .carousel-slide-point {
+    background-color: $theme;
+  }
+}
+
+.booking {
+  background: $light-theme;
+}
 
 @media (max-width: 992px) {
-  .active {
+  .nav-link.active {
     border: solid 1px white;
+  }
+  .nav-link:hover,
+  .active {
+    &::before,
+    &::after {
+      content: none;
+    }
   }
 }
