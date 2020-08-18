@@ -14,10 +14,16 @@ body {
           align-items: center;
 }
 
+#navbar {
+  background: rgba(255, 94, 0, 0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .hero {
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5))), url("./images/hero-bg.jpg") no-repeat center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5)), url("./images/hero-bg.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("./images/hero-bg.jpg") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6)), url("./images/hero-bg.jpg") no-repeat center;
   background-size: cover;
 }
 
