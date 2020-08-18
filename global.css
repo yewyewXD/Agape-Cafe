@@ -59,11 +59,11 @@ select {
 }
 
 .btn-lg {
-  padding: 15px 30px !important;
+  padding: 15px 40px !important;
 }
 
 .btn-md {
-  padding: 10px 20px !important;
+  padding: 10px 25px !important;
 }
 
 #navbar {
@@ -88,6 +88,17 @@ select {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("./images/hero-bg.jpg") no-repeat center;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6)), url("./images/hero-bg.jpg") no-repeat center;
   background-size: cover;
+}
+
+.about .image,
+.booking .image {
+  border: solid 2px #ff5e00;
+  background: black;
+}
+
+.about .image img,
+.booking .image img {
+  opacity: 0.7;
 }
 
 .menu .tab-content {
