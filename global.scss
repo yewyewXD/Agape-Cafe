@@ -7,20 +7,32 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+h1 {
+  font-family: "Coustard", serif;
+}
 .all-center {
   display: flex !important;
   justify-content: center;
   align-items: center;
 }
-.btn {
+.btn,
+.list-group-item,
+input,
+select {
+  border: none !important;
   outline: none !important;
   box-shadow: none !important;
   transition: 0.2s !important;
   border-radius: 0 !important;
+}
+.btn,
+.list-group-item {
   &:hover {
     transform: scale(1.1);
+    z-index: 3 !important;
   }
 }
+
 .btn-primary {
   background: $theme !important;
   border: solid 1px $theme !important;
@@ -71,6 +83,9 @@ body {
   .tab-content {
     min-height: 500px;
   }
+  .card-img-top {
+    height: 150px;
+  }
 }
 .review {
   background: $light-theme;
@@ -80,6 +95,20 @@ body {
   }
   .carousel-slide-point {
     background-color: $theme;
+  }
+}
+.menu {
+  .list-group-item {
+    font-family: "Coustard", serif;
+  }
+  .list-group-item.active {
+    background: $theme !important;
+  }
+  .price-label {
+    margin-bottom: 70px;
+    padding: 5px 10px;
+    background: $theme;
+    border-radius: 40%;
   }
 }
 
@@ -92,10 +121,10 @@ body {
     border: solid 1px white;
   }
   .nav-link:hover,
-  .active {
+  .nav-link.active {
     &::before,
     &::after {
-      content: none;
+      content: "";
     }
   }
 }
