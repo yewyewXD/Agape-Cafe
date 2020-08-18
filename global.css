@@ -20,6 +20,38 @@ body {
   transition: 0.3s;
 }
 
+.btn {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: 0.2s !important;
+  transition: 0.2s !important;
+  border-radius: 0 !important;
+}
+
+.btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-lg {
+  padding: 15px 30px !important;
+}
+
+.btn-primary {
+  background: #ff5e00 !important;
+  border: solid 1px #ff5e00 !important;
+}
+
+.btn-primary:hover {
+  background: #df5302 !important;
+}
+
+.btn-secondary {
+  background: none !important;
+  border: solid 1px white !important;
+}
+
 .hero {
   height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("./images/hero-bg.jpg") no-repeat center;

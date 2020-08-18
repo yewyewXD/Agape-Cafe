@@ -1,4 +1,5 @@
 $theme: #ff5e00;
+$dark-theme: #df5302;
 
 //Global
 body {
@@ -13,7 +14,29 @@ body {
   background: rgba(255, 94, 0, 0);
   transition: 0.3s;
 }
-
+.btn {
+  outline: none !important;
+  box-shadow: none !important;
+  transition: 0.2s !important;
+  border-radius: 0 !important;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.btn-lg {
+  padding: 15px 30px !important;
+}
+.btn-primary {
+  background: $theme !important;
+  border: solid 1px $theme !important;
+  &:hover {
+    background: $dark-theme !important;
+  }
+}
+.btn-secondary {
+  background: none !important;
+  border: solid 1px white !important;
+}
 //Home Page
 .hero {
   height: 100vh;
@@ -28,13 +51,7 @@ body {
   }
 }
 
-// @media (max-width: 992px) {
-//   .active {
-//     border: solid 1px white;
-//   }
-// }
-
-@include media-breakpoint-down(lg) {
+@media (max-width: 992px) {
   .active {
     border: solid 1px white;
   }
