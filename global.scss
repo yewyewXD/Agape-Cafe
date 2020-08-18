@@ -1,3 +1,5 @@
+$theme: #ff5e00;
+
 //Global
 body {
   overflow-x: hidden;
@@ -23,5 +25,17 @@ body {
 .menu {
   .tab-content {
     min-height: 500px;
+  }
+}
+
+// @media (max-width: 992px) {
+//   .active {
+//     border: solid 1px white;
+//   }
+// }
+
+@include media-breakpoint-down(lg) {
+  .active {
+    border: solid 1px white;
   }
 }
