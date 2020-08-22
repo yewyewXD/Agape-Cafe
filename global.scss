@@ -7,7 +7,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Coustard", serif;
 }
 .all-center {
@@ -95,7 +100,7 @@ select {
     min-height: 500px;
   }
   .card-img-top {
-    height: 150px;
+    height: 160px;
   }
   .list-group-item {
     font-family: "Coustard", serif;
