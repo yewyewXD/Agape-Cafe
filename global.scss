@@ -63,8 +63,8 @@ select {
   font-family: "Coustard", serif;
   color: white !important;
 }
-.nav-link:hover,
-.nav-link.active {
+.link-hover:hover,
+.link-hover.active {
   &::before,
   &::after {
     content: "-";
@@ -97,18 +97,6 @@ select {
   .card-img-top {
     height: 150px;
   }
-}
-.review {
-  background: $light-theme;
-  .fa-angle-right,
-  .fa-angle-left {
-    color: red;
-  }
-  .carousel-slide-point {
-    background-color: $theme;
-  }
-}
-.menu {
   .list-group-item {
     font-family: "Coustard", serif;
   }
@@ -122,6 +110,16 @@ select {
     border-radius: 40%;
   }
 }
+.review {
+  background: $light-theme;
+  .fa-angle-right,
+  .fa-angle-left {
+    color: red;
+  }
+  .carousel-slide-point {
+    background-color: $theme;
+  }
+}
 
 .booking {
   background: $light-theme;
@@ -131,8 +129,8 @@ select {
   .nav-link.active {
     border: solid 1px white;
   }
-  .nav-link:hover,
-  .nav-link.active {
+  .link-hover:hover,
+  .link-hover.active {
     &::before,
     &::after {
       content: "";
