@@ -110,10 +110,6 @@ select {
   min-height: 500px;
 }
 
-.menu .card-img-top {
-  height: 160px;
-}
-
 .menu .list-group-item {
   font-family: "Coustard", serif;
 }
