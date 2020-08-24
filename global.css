@@ -12,6 +12,10 @@ h6 {
   font-family: "Coustard", serif;
 }
 
+h1 {
+  font-size: 60px !important;
+}
+
 .all-center {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -47,6 +51,7 @@ select {
 .btn-primary {
   background: #ff5e00 !important;
   border: solid 1px #ff5e00 !important;
+  padding: 15px 40px !important;
 }
 
 .btn-primary:hover {
@@ -56,19 +61,12 @@ select {
 .btn-secondary {
   background: none !important;
   border: solid 1px white !important;
+  padding: 15px 34px !important;
 }
 
 .btn-secondary-alt {
   border: #ff5e00 solid 1px !important;
   color: #ff5e00 !important;
-}
-
-.btn-lg {
-  padding: 15px 40px !important;
-}
-
-.btn-md {
-  padding: 10px 25px !important;
 }
 
 #navbar {
@@ -104,6 +102,10 @@ select {
 .about .image img,
 .booking .image img {
   opacity: 0.7;
+}
+
+.review .client-image {
+  border: 5px solid #ff5e00;
 }
 
 .menu .tab-content {
@@ -150,6 +152,38 @@ select {
   .link-hover.active::before,
   .link-hover.active::after {
     content: "";
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px !important;
+  }
+  h2 {
+    font-size: 26px !important;
+  }
+  h4 {
+    font-size: 19px !important;
+  }
+  .header a,
+  span,
+  p,
+  label,
+  input,
+  h6 {
+    font-size: 13px !important;
+  }
+  .btn {
+    font-size: 15px !important;
+  }
+  .btn-primary {
+    padding: 12px 35px !important;
+  }
+  .btn-secondary {
+    padding: 12px 29px !important;
+  }
+  .hero {
+    height: 70vh;
   }
 }
 /*# sourceMappingURL=global.css.map */
