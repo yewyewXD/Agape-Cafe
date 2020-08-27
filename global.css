@@ -16,6 +16,10 @@ h1 {
   font-size: 60px !important;
 }
 
+input[type="date"]::-webkit-inner-spin-button {
+  background-color: #fdb911 !important;
+}
+
 .all-center {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -49,24 +53,32 @@ select {
 }
 
 .btn-primary {
-  background: #ff5e00 !important;
-  border: solid 1px #ff5e00 !important;
+  background: #fdb911 !important;
+  border: solid 1px #fdb911 !important;
   padding: 15px 40px !important;
 }
 
 .btn-primary:hover {
-  background: #df5302 !important;
+  background: #d69d0c !important;
 }
 
 .btn-secondary {
   background: none !important;
-  border: solid 1px white !important;
+  border: solid 1px !important;
   padding: 15px 34px !important;
 }
 
 .btn-secondary-alt {
-  border: #ff5e00 solid 1px !important;
-  color: #ff5e00 !important;
+  border: #fdb911 solid 1px !important;
+  color: #fdb911 !important;
+}
+
+.header-logo {
+  width: 20%;
+}
+
+.footer-logo {
+  width: 120px;
 }
 
 #navbar {
@@ -77,13 +89,6 @@ select {
 
 .nav-link {
   font-family: "Coustard", serif;
-  color: white !important;
-}
-
-.link-hover:hover::before, .link-hover:hover::after,
-.link-hover.active::before,
-.link-hover.active::after {
-  content: "-";
 }
 
 .hero {
@@ -95,7 +100,7 @@ select {
 
 .about .image,
 .booking .image {
-  border: solid 2px #ff5e00;
+  border: solid 2px #fdb911;
   background: black;
 }
 
@@ -104,8 +109,23 @@ select {
   opacity: 0.7;
 }
 
+.review {
+  background: rgba(253, 186, 17, 0.1);
+}
+
+.review .fa-angle-right,
+.review .fa-angle-left,
+.review .fa-star {
+  color: #fdb911;
+}
+
+.review .carousel-slide-point {
+  background-color: #fdb911;
+}
+
 .review .client-image {
-  border: 5px solid #ff5e00;
+  border: 5px solid #fdb911;
+  width: 200px;
 }
 
 .menu .tab-content {
@@ -116,42 +136,54 @@ select {
   font-family: "Coustard", serif;
 }
 
+.menu .list-group-item:hover {
+  background: #fdb911;
+}
+
 .menu .list-group-item.active {
-  background: #ff5e00 !important;
+  background: #fdb911 !important;
+  color: black;
 }
 
 .menu .price-label {
   margin-bottom: 70px;
   padding: 5px 10px;
-  background: #ff5e00;
+  background: #fdb911;
   border-radius: 40%;
 }
 
-.review {
-  background: rgba(255, 94, 0, 0.1);
-}
-
-.review .fa-angle-right,
-.review .fa-angle-left {
-  color: red;
-}
-
-.review .carousel-slide-point {
-  background-color: #ff5e00;
-}
-
 .booking {
-  background: rgba(255, 94, 0, 0.1);
+  background: rgba(253, 186, 17, 0.1);
+}
+
+.blog .blog-post {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.blog .blog-post:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.blog .blog-post:hover .card-img-top {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+.blog .blog-post .image-container {
+  background: #fdb911;
+}
+
+.footer {
+  background: #fdb911;
 }
 
 @media (max-width: 992px) {
   .nav-link.active {
-    border: solid 1px white;
-  }
-  .link-hover:hover::before, .link-hover:hover::after,
-  .link-hover.active::before,
-  .link-hover.active::after {
-    content: "";
+    border: solid 1px;
   }
 }
 
@@ -184,6 +216,13 @@ select {
   }
   .hero {
     height: 70vh;
+  }
+  .review .client-image {
+    border: 5px solid #fdb911;
+    width: 120px;
+  }
+  .menu .menu-tab {
+    overflow-x: auto;
   }
 }
 /*# sourceMappingURL=global.css.map */

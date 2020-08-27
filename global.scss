@@ -1,6 +1,6 @@
-$theme: #ff5e00;
-$dark-theme: #df5302;
-$light-theme: rgba(255, 94, 0, 0.1);
+$theme: #fdb911;
+$dark-theme: #d69d0c;
+$light-theme: rgba(253, 186, 17, 0.1);
 
 //Global
 body {
@@ -17,6 +17,9 @@ h6 {
 }
 h1 {
   font-size: 60px !important;
+}
+input[type="date"]::-webkit-inner-spin-button {
+  background-color: $theme !important;
 }
 .all-center {
   display: flex !important;
@@ -51,7 +54,7 @@ select {
 }
 .btn-secondary {
   background: none !important;
-  border: solid 1px white !important;
+  border: solid 1px !important;
   padding: 15px 34px !important;
 }
 .btn-secondary-alt {
@@ -61,24 +64,23 @@ select {
 // .btn-md {
 //   padding: 10px 25px !important;
 // }
-
+.header-logo {
+  width: 20%;
+}
+.footer-logo {
+  width: 120px;
+}
 #navbar {
   background: rgba(255, 94, 0, 0);
   transition: 0.3s;
 }
 .nav-link {
   font-family: "Coustard", serif;
-  color: white !important;
-}
-.link-hover:hover,
-.link-hover.active {
-  &::before,
-  &::after {
-    content: "-";
-  }
 }
 
 //Home Page
+
+//hero
 .hero {
   height: 100vh;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6)),
@@ -86,6 +88,7 @@ select {
   background-size: cover;
 }
 
+//about
 .about,
 .booking {
   .image {
@@ -97,24 +100,38 @@ select {
   }
 }
 
+//review
 .review {
+  background: $light-theme;
+  .fa-angle-right,
+  .fa-angle-left,
+  .fa-star {
+    color: $theme;
+  }
+  .carousel-slide-point {
+    background-color: $theme;
+  }
   .client-image {
     border: 5px solid $theme;
+    width: 200px;
   }
 }
 
+//menu
 .menu {
   .tab-content {
     min-height: 500px;
   }
-  // .card-img-top {
-  //   height: 160px;
-  // }
+
   .list-group-item {
     font-family: "Coustard", serif;
+    &:hover {
+      background: $theme;
+    }
   }
   .list-group-item.active {
     background: $theme !important;
+    color: black;
   }
   .price-label {
     margin-bottom: 70px;
@@ -123,31 +140,38 @@ select {
     border-radius: 40%;
   }
 }
-.review {
-  background: $light-theme;
-  .fa-angle-right,
-  .fa-angle-left {
-    color: red;
-  }
-  .carousel-slide-point {
-    background-color: $theme;
-  }
-}
 
+//booking
 .booking {
   background: $light-theme;
 }
 
+//blog
+.blog {
+  .blog-post {
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.1);
+      .card-img-top {
+        transition: 0.2s;
+        opacity: 0.8;
+      }
+    }
+    .image-container {
+      background: $theme;
+    }
+  }
+}
+
+//footer
+.footer {
+  background: $theme;
+}
+
 @media (max-width: 992px) {
   .nav-link.active {
-    border: solid 1px white;
-  }
-  .link-hover:hover,
-  .link-hover.active {
-    &::before,
-    &::after {
-      content: "";
-    }
+    border: solid 1px;
   }
 }
 
@@ -181,5 +205,18 @@ select {
 
   .hero {
     height: 70vh;
+  }
+
+  .review {
+    .client-image {
+      border: 5px solid $theme;
+      width: 120px;
+    }
+  }
+
+  .menu {
+    .menu-tab {
+      overflow-x: auto;
+    }
   }
 }
