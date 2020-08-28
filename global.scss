@@ -4,9 +4,12 @@ $lightest-theme: rgba(253, 186, 17, 0.1);
 $light-theme: rgba(253, 186, 17, 0.5);
 
 //Global
+html {
+  scroll-behavior: smooth !important;
+}
+
 body {
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 h1,
 h2,
