@@ -15,15 +15,21 @@ function submitBooking() {
 }
 
 const navbar = document.getElementById("navbar");
+const lightLogo = document.getElementsByClassName("logo-text-white")[0];
+const darkLogo = document.getElementsByClassName("logo-text-dark")[0];
 
 window.onscroll = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     navbar.style.background = "rgba(253, 186, 17, .95)";
     navbar.classList.remove("navbar-dark");
     navbar.classList.add("navbar-light");
+    darkLogo.style.display = "inline-block";
+    lightLogo.style.display = "none";
   } else {
     navbar.style.background = "rgba(253, 186, 17, 0)";
     navbar.classList.remove("navbar-light");
     navbar.classList.add("navbar-dark");
+    darkLogo.style.display = "none";
+    lightLogo.style.display = "inline-block";
   }
 };

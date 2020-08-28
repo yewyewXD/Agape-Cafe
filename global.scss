@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Lithos Pro, bold";
+  src: url("../fonts/LithosPro-Bold.otf") format("opentype");
+}
+
 $theme: #fdb911;
 $dark-theme: #d69d0c;
 $lightest-theme: rgba(253, 186, 17, 0.1);
@@ -17,8 +22,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Coustard", serif;
+  font-family: "Lithos Pro, bold";
 }
+
 h1 {
   font-size: 60px !important;
 }
@@ -69,7 +75,14 @@ select {
 //   padding: 10px 25px !important;
 // }
 .header-logo {
-  width: 20%;
+  width: 40px;
+}
+.logo-text-dark,
+.logo-text-white {
+  width: 139px;
+}
+.logo-text-dark {
+  display: none;
 }
 .footer-logo {
   width: 120px;
@@ -79,7 +92,7 @@ select {
   transition: 0.3s;
 }
 .nav-link {
-  font-family: "Coustard", serif;
+  font-family: "Lithos Pro, bold";
 }
 
 //Home Page
@@ -128,7 +141,7 @@ select {
   }
 
   .list-group-item {
-    font-family: "Coustard", serif;
+    font-family: "Lithos Pro, bold";
     &:hover {
       background: $theme;
     }
@@ -192,6 +205,15 @@ select {
   .nav-link.active {
     border: solid 1px;
   }
+
+  .contact {
+    .contact-box {
+      height: 240px;
+      .contact-box-icon {
+        bottom: 210px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -221,6 +243,13 @@ select {
   .btn-secondary {
     padding: 12px 29px !important;
   }
+  .header-logo {
+    width: 35px;
+  }
+  .logo-text-dark,
+  .logo-text-white {
+    width: 120px;
+  }
 
   .hero {
     height: 70vh;
@@ -236,6 +265,17 @@ select {
   .menu {
     .menu-tab {
       overflow-x: auto;
+    }
+  }
+
+  .contact {
+    .contact-box {
+      height: 180px;
+      .contact-box-icon {
+        bottom: 150px;
+        width: 50px;
+        height: 50px;
+      }
     }
   }
 }

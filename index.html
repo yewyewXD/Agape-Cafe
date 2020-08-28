@@ -30,8 +30,18 @@
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <div class="container">
           <a class="navbar-brand w-25" href="/"
-            ><img src="./images/logo.png" alt="" class="header-logo"
-          /></a>
+            ><img src="./images/logo.png" alt="" class="header-logo" />
+            <img
+              src="./images/logo-text-dark.png"
+              alt=""
+              class="logo-text-dark"
+            />
+            <img
+              src="./images/logo-text-white.png"
+              alt=""
+              class="logo-text-white"
+            />
+          </a>
           <button
             class="navbar-toggler ml-sm-auto"
             type="button"
@@ -109,7 +119,9 @@
     <!-- Hero -->
     <div class="hero all-center text-center" id="home">
       <div class="container all-center flex-column">
-        <h1 class="mb-5 text-white">The right ingredient for the right food</h1>
+        <h1 class="mb-sm-5 mb-3 mt-sm-0 mt-3 text-white">
+          The right ingredient for the right food
+        </h1>
         <div>
           <a href="/#booking" class="btn btn-primary btn-lg text-dark m-3"
             >Book A Table</a
@@ -861,13 +873,13 @@
         <h2>Contact Us</h2>
         <div class="row mt-5 all-center">
           <div
-            class="contact-box col-md-3 mx-3 px-4 pt-5 all-center flex-column justify-content-start"
+            class="contact-box col-md-3 col-sm-7 mx-lg-3 mx-md-2 m-md-0 m-4 all-center flex-column justify-content-start"
           >
             <i
               class="contact-box-icon all-center fa fa-map-marker fa-2x position-absolute rounded-circle"
               aria-hidden="true"
             ></i>
-            <h6>Our Address</h6>
+            <h6 class="mt-5">Our Address</h6>
             <p>
               8, Jalan Permas 11/1C, Bandar Baru Permas Jaya 81750 Johor Bahru,
               Malaysia
@@ -875,28 +887,34 @@
           </div>
 
           <div
-            class="contact-box col-md-3 mx-3 px-4 pt-5 all-center flex-column justify-content-start"
+            class="contact-box col-md-3 col-sm-7 mx-lg-3 mx-md-2 m-md-0 m-4 all-center flex-column justify-content-start"
           >
             <i
               class="contact-box-icon all-center fa fa-phone fa-2x position-absolute rounded-circle"
               aria-hidden="true"
             ></i>
-            <h6>Our Numbers</h6>
+            <h6 class="mt-5">Our Numbers</h6>
             <p class="m-0">Phone: +123456789</p>
             <p class="m-0">Phone: +123456789</p>
             <p class="m-0">Phone: +123456789</p>
           </div>
 
           <div
-            class="contact-box col-md-3 mx-3 px-4 pt-5 all-center flex-column justify-content-start"
+            class="contact-box col-md-3 col-sm-7 mx-lg-3 mx-md-2 m-md-0 m-4 all-center flex-column justify-content-start"
           >
             <i
               class="contact-box-icon all-center fa fa-clock-o fa-2x position-absolute rounded-circle"
               aria-hidden="true"
             ></i>
-            <h6>Opening Hours</h6>
-            <p class="m-0">Mon - Wed: 12pm ~ 9pm</p>
-            <p class="m-0">Thurs - Sat: 12pm ~ 8.30pm</p>
+            <h6 class="mt-5">Opening Hours</h6>
+            <p class="m-0 d-lg-block d-md-none">Mon - Wed: 12pm ~ 9pm</p>
+            <p class="m-0 d-lg-none d-md-block d-none">Mon - Wed:</p>
+            <p class="mb-2 d-lg-none d-md-block d-none">12pm ~ 9pm</p>
+
+            <p class="m-0 d-lg-block d-md-none">Thurs - Sat: 12pm ~ 8.30pm</p>
+            <p class="m-0 d-lg-none d-md-block d-none">Thurs - Sat:</p>
+            <p class="mb-2 d-lg-none d-md-block d-none">12pm ~ 8.30pm</p>
+
             <p class="m-0">Sun: 12pm ~ 9pm</p>
           </div>
         </div>
