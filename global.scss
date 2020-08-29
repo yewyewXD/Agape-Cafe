@@ -94,6 +94,12 @@ select {
 .nav-link {
   font-family: "Lithos Pro, bold";
 }
+.sticky-icons {
+  max-width: 50px;
+  img {
+    width: 100%;
+  }
+}
 
 //Home Page
 
@@ -250,6 +256,13 @@ select {
   .logo-text-white {
     width: 120px;
   }
+  // .sticky-icons {
+  //   max-width: 150px;
+  //   max-height: 50px;
+  //   img {
+  //     width: 30%;
+  //   }
+  // }
 
   .hero {
     height: 90vh;

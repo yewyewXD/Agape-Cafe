@@ -108,6 +108,14 @@ select {
   font-family: "Lithos Pro, bold";
 }
 
+.sticky-icons {
+  max-width: 50px;
+}
+
+.sticky-icons img {
+  width: 100%;
+}
+
 .hero {
   height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("./images/hero-bg.jpg") no-repeat center;
