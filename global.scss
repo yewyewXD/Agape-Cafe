@@ -15,6 +15,7 @@ html {
 
 body {
   overflow-x: hidden;
+  min-height: 100vh;
 }
 h1,
 h2,
@@ -28,9 +29,7 @@ h6 {
 h1 {
   font-size: 60px !important;
 }
-input[type="date"]::-webkit-inner-spin-button {
-  background-color: $theme !important;
-}
+
 .all-center {
   display: flex !important;
   justify-content: center;
@@ -104,6 +103,14 @@ select {
   img {
     width: 50px;
     height: 50px;
+  }
+}
+
+//404 page
+.not-found-page {
+  background: $theme;
+  img {
+    width: 400px;
   }
 }
 
@@ -270,6 +277,11 @@ select {
     img {
       width: 40px;
       height: 40px;
+    }
+  }
+  .not-found-page {
+    img {
+      width: 250px;
     }
   }
 
