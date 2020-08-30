@@ -109,11 +109,17 @@ select {
 }
 
 .sticky-icons {
-  max-width: 50px;
+  z-index: 100;
+  position: fixed;
+  width: 50px;
+  height: 150px;
+  top: 50%;
+  left: 0;
 }
 
 .sticky-icons img {
-  width: 100%;
+  width: 50px;
+  height: 50px;
 }
 
 .hero {
@@ -264,6 +270,14 @@ select {
   .logo-text-dark,
   .logo-text-white {
     width: 120px;
+  }
+  .sticky-icons {
+    width: 150px;
+    height: 50px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
   }
   .hero {
     height: 90vh;

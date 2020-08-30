@@ -95,9 +95,15 @@ select {
   font-family: "Lithos Pro, bold";
 }
 .sticky-icons {
-  max-width: 50px;
+  z-index: 100;
+  position: fixed;
+  width: 50px;
+  height: 150px;
+  top: 50%;
+  left: 0;
   img {
-    width: 100%;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -256,13 +262,14 @@ select {
   .logo-text-white {
     width: 120px;
   }
-  // .sticky-icons {
-  //   max-width: 150px;
-  //   max-height: 50px;
-  //   img {
-  //     width: 30%;
-  //   }
-  // }
+  .sticky-icons {
+    width: 150px;
+    height: 50px;
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
 
   .hero {
     height: 90vh;
