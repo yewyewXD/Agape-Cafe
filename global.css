@@ -25,6 +25,14 @@ h1 {
   font-size: 60px !important;
 }
 
+.highlight {
+  color: #fdb911;
+}
+
+.highlight:hover {
+  color: #d69d0c;
+}
+
 .all-center {
   display: -webkit-box !important;
   display: -ms-flexbox !important;

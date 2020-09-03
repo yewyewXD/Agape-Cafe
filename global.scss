@@ -30,6 +30,13 @@ h1 {
   font-size: 60px !important;
 }
 
+.highlight {
+  color: $theme;
+  &:hover {
+    color: $dark-theme;
+  }
+}
+
 .all-center {
   display: flex !important;
   justify-content: center;
