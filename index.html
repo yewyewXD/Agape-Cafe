@@ -488,7 +488,7 @@
                         alt="fish-and-chip"
                       />
                       <div class="card-body all-center p-3 flex-column">
-                        <p class="card-text m-0 mt-2">Fish and Chip</p>
+                        <p class="card-text m-0 mt-2">Fish and Chips</p>
                         <span class="price-label mt-2">RM 15.90</span>
                       </div>
                     </div>
@@ -775,7 +775,7 @@
               !
             </p>
 
-            <form class="mt-3">
+            <form class="mt-3" id="booking-form">
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -820,26 +820,19 @@
 
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label>Party Size</label>
+                    <label>Group Size</label>
                     <select class="custom-select" id="partyInput" name="Party">
                       <option selected>Select size</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
                     </select>
                   </div>
                 </div>
               </div>
+              <button class="btn btn-primary btn-lg mt-3 text-dark">
+                Book now
+              </button>
             </form>
-            <a
-              class="btn btn-primary btn-lg mt-3 text-dark"
-              onclick="submitBooking()"
-            >
-              Book now
-            </a>
           </div>
         </div>
       </div>
