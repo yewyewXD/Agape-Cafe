@@ -10,7 +10,7 @@ A static website I built for a restaurant owner in Johor Bahru, Malaysia to help
 
 Started on: 12 Aug 2020 <br>
 Completed on: 28 Aug 2020 <br>
-Last modified on: 9 Sep 2020 <br>
+Last modified on: 7 Oct 2020 <br>
 
 ## Screenshots
 
