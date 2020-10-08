@@ -26,4 +26,4 @@ Last modified on: 7 Oct 2020 <br>
 
 ##### Images:
 
-[Image](https://www.freepik.com/) <br>
+[Freepik](https://www.freepik.com/) <br>
